@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+    padding: 0 2rem;
+} */
+body {
+  background-color: rgb(240, 238, 241);
+}
+nav {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.logo p {
+  font-size: 2.5rem;
+}
+nav button {
+  font-size: 1rem;
+  padding: 1em 1.2em;
+  border: none;
+  border-radius: 10px;
+}
+
+main {
+  min-height: 100vh;
+  padding: 2rem 5rem;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+}
+.add-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  border: none;
+}
+.add-btn:hover {
+  background-color: #c4c4c4;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.single-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.single-card p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.single-card button {
+  margin-top: 1rem;
+  padding: 1rem 5rem;
+}
+
+/* MODAL FORM  */
+
+.modal {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 2rem;
+}
+dialog {
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.input {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: rgb(240, 238, 241);
+  font-size: 1rem;
+}
+label {
+  font-size: 1.2rem;
+}
+.check-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+button {
+  padding: 0.6rem 2.5rem;
+  border-radius: 100vmax;
+  border: none;
+  font-size: 1.1rem;
+}
+
+/* UTILITY CLASSES */
+.green-btn {
+  background-color: #8fe58c;
+}
+.red-btn {
+  background-color: #e58cbc;
+}

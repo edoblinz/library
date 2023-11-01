@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <p>library</p>
+      </div>
+      <button>Log in</button>
+    </nav>
+    <main>
+
+      <div class="content">
+        <div class="add-button">
+          <button data-open-modal class="add-btn">+ Add Book</button>
+        </div>
+        <div class="card-container" id="card-container">
+          <div class="single-card">
+            <p>"The Wheel of time"</p>
+            <p>marina vittori</p>
+            <p>2345 pages</p>
+            <button class="btn" id="read-btn">Read</button>
+            <button class="btn">Remove</button>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    
+    <dialog data-modal class="modal">
+      <form action="">
+        <h3>Add New Book</h3>
+        <input class="input" id="title" type="text" placeholder="Title" />
+        <input class="input" id="author" type="text" placeholder="Author" />
+        <input class="input" id="pages" type="number" placeholder="Pages" />
+        <div class="check-wrapper">
+          <label for="read-status">Have you read the book?</label>
+          <input  class="checkbox" type="checkbox" name="" id="read-status" />
+        </div>
+        <div class="action-btn">
+        <button data-close-modal type="button">Cancel</button>
+        <button type="button" onclick="addBookToLibrary()">Add</button>
+      </div>
+      </form>
+    </dialog>
+  </body>
+</html>
