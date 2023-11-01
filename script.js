@@ -29,7 +29,6 @@ function Book(title, author, pages, readStatus) {
 }
 
 function addBookToLibrary() {
-  // do stuff here
   let bookTitle = title.value
   let bookAuthor = author.value
   let bookPages = pages.value
@@ -70,7 +69,6 @@ function createBook(bookTitle, BookAuthor, BookPages, readStatus) {
   if (readStatus == true) {
     readBtn.textContent = "Read"
     readBtn.classList.add("green-btn")
-    console.log(readStatus)
   }else {
     readBtn.textContent = "Not Read"
     readBtn.classList.add("red-btn")
@@ -101,10 +99,4 @@ const toggleReadStatus = (e) => {
     e.target.innerText = "Read"
     e.target.className ="btn green-btn"
   }
-  // toggleReadBtn(libraryIndex)
-  console.log(e)
-}
-
-const toggleReadBtn = (index) => {
-
 }
